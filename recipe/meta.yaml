@@ -1,17 +1,17 @@
-{% set version = "2025.3.2" %}
+{% set version = "2026.0.0" %}
 # work-around for https://github.com/conda/conda-build/issues/5443
 {% set intel_build_number = "dummy" %}
-{% set intel_build_number = "832" %}   # [linux]
-{% set intel_build_number = "833" %}   # [win]
+{% set intel_build_number = "947" %}   # [linux]
+{% set intel_build_number = "944" %}   # [win]
 
-{% set oneccl_version = "2021.17.2" %}
-{% set oneccl_build_number = "5" %}
+{% set oneccl_version = "2022.0.0" %}
+{% set oneccl_build_number = "49301" %}
 
-{% set tbb_version_major = "2022" %}
+{% set tbb_version_major = "2023" %}
 
-{% set umf_version = "1.0.3" %}
-{% set umf_build_number = "17" %}   # [linux]
-{% set umf_build_number = "18" %}   # [win]
+{% set umf_version = "1.1.0" %}
+{% set umf_build_number = "340" %}   # [linux]
+{% set umf_build_number = "338" %}   # [win]
 
 {% set intel_ch = "https://software.repos.intel.com/python/conda" %}
 
@@ -27,46 +27,46 @@ source:
   # Is there a better way to specify skipping the source if it does not exist? (so it matches 'skip: True' selectors)
   - url: {{ intel_ch }}/{{ target_platform }}/ifx_impl_{{ target_platform }}-{{ version }}-intel_{{ intel_build_number }}.conda  # [linux64 or win64]
     folder: ifx_impl_{{ target_platform }}  # [linux64 or win64]
-    sha256: 7d70df5b374e11a5b08c28010013f64db2e23c91870f561c3a802b5e7ee64eda  # [linux64]
+    sha256: a4310e1e57f2da55f175e70e0bceca00b076f2e8d2153ec4187ab5b685b449a4  # [linux64]
   - url: {{ intel_ch }}/{{ target_platform }}/ifx_{{ target_platform }}-{{ version }}-intel_{{ intel_build_number }}.conda  # [linux64 or win64]
     folder: ifx_{{ target_platform }}  # [linux64 or win64]
-    sha256: 03033df485ac5159ef90a5e5fa65a657c0d3a151be1f29aff2d7fbe0ec0dbc31  # [linux64]
+    sha256: 23b47612745bba249b5ded8716f0f35841f00b7c59ed71498b538bf7beb71e2f  # [linux64]
   - url: {{ intel_ch }}/{{ target_platform }}/intel-cmplr-lic-rt-{{ version }}-intel_{{ intel_build_number }}.conda
     folder: intel-cmplr-lic-rt
-    sha256: de4da0be201cd75a580a2584723ab4824d01b229df324fdd02142d7d96975423  # [linux64]
+    sha256: 6e22165bbe976c2e9645eded2965d8eb416e89c0f11fb39d17b6b4a1309424d2  # [linux64]
   - url: {{ intel_ch }}/{{ target_platform }}/intel-cmplr-lib-rt-{{ version }}-intel_{{ intel_build_number }}.conda
     folder: intel-cmplr-lib-rt
-    sha256: ce9f1ac369148df0d16f27196fe11508ad4d406388eb568a54f92dae20d47c33  # [linux64]
+    sha256: 212192c80e68db99e19f27dbc858b3ecf03a84fa4e9a5171053235e572445ecd  # [linux64]
   - url: {{ intel_ch }}/{{ target_platform }}/intel-cmplr-lib-ur-{{ version }}-intel_{{ intel_build_number }}.conda
     folder: intel-cmplr-lib-ur
-    sha256: b14912963a0478db038b209a7f9493573d9c056a2d0e9b8421dc1ab59be21cee  # [linux64]
+    sha256: 94e655f3d17d01a108323378b5cff9fe6515e7165f5546b7b19df2f6cdb3dae6  # [linux64]
   - url: {{ intel_ch }}/{{ target_platform }}/intel-sycl-rt-{{ version }}-intel_{{ intel_build_number }}.conda
     folder: intel-sycl-rt
-    sha256: fbe4439e8702772ed41dbbc2c2a1584f2264e9af3a8066ea17d26e6c11c2280d  # [linux64]
+    sha256: 4169fed388f819181bd47f7a6286867fed45ada792e9476b6dc411cb9760a5c6  # [linux64]
   - url: {{ intel_ch }}/{{ target_platform }}/intel-fortran-rt-{{ version }}-intel_{{ intel_build_number }}.conda
     folder: intel-fortran-rt
-    sha256: 4e165d35c9a73c312a4a8d94e253ebddd08e1be9880647a5bece894addc2f5ab  # [linux64]
+    sha256: 7c56ccd2178e8672f0d9665af5ed90e6860f479af6411d4a33f08e33c12382c4  # [linux64]
   - url: {{ intel_ch }}/{{ target_platform }}/intel-opencl-rt-{{ version }}-intel_{{ intel_build_number }}.conda  # [linux64 or win64]
     folder: intel-opencl-rt  # [linux64 or win64]
-    sha256: 715facf78a4d28583ae45925e76d193067810bed3f8d311a906d05450309a75e  # [linux64]
+    sha256: 3778388a3a928273929ef41640133f29ba1d12fa81a584ead2ed97580337cecc  # [linux64]
   - url: {{ intel_ch }}/{{ target_platform }}/dpcpp-cpp-rt-{{ version }}-intel_{{ intel_build_number }}.conda  # [not win32]
     folder: dpcpp-cpp-rt  # [not win32]
-    sha256: 092207ae1a58936aed10df972d68b39aedd021dd0ed8e76f50ef5f6e5d9fac23  # [linux64]
+    sha256: 31fd2d26ee7a5b681e59dfe4dcd55ff8a9b4a8bdb0881b9be935f0d36368666a  # [linux64]
   - url: {{ intel_ch }}/{{ target_platform }}/dpcpp_impl_{{ target_platform }}-{{ version }}-intel_{{ intel_build_number }}.conda  # [linux64 or win64]
     folder: dpcpp_impl_{{ target_platform }}  # [linux64 or win64]
-    sha256: 835d93dfa93dd3f94c6fc2c017bde43d6ed4e9afd94df4afa14f55c14da2a2ac  # [linux64]
+    sha256: 6e1433620be6bb7f3d799e469f1a48a85a2d37b46eba5208c4a11f21f7d4e540  # [linux64]
   - url: {{ intel_ch }}/{{ target_platform }}/dpcpp_{{ target_platform }}-{{ version }}-intel_{{ intel_build_number }}.conda  # [linux64 or win64]
     folder: dpcpp_{{ target_platform }}  # [linux64 or win64]
-    sha256: a11b7ced510217d223d8e3eecf2715a239e4039e4d68f30e64325c2884c0212b  # [linux64]
+    sha256: d4fe4b65396757c3a2adc8ff0296935b8c2d2aba462da1b5ac15331e8da35f96  # [linux64]
   - url: {{ intel_ch }}/{{ target_platform }}/oneccl-devel-{{ oneccl_version }}-intel_{{ oneccl_build_number }}.conda  # [linux64]
     folder: oneccl-devel  # [linux64]
-    sha256: b8fb3b1b06f7d4e079991419b91f2b91edd4b85b893b30441fff51bed7de656d  # [linux64]
+    sha256: 57dd1f5032d98e72346dba3371c97003d1fbf619aba52649e44f86e649587899  # [linux64]
   - url: {{ intel_ch }}/{{ target_platform }}/umf-{{ umf_version }}-intel_{{ umf_build_number }}.conda  # [linux64 or win64]
     folder: umf  # [linux64 or win64]
-    sha256: a8e2f29edd95dce924269ab4234900cf688a59d1d8c3057bf31ba83bcc719ca7  # [linux64]
+    sha256: 3414521045ed05a60ea8d3046ae0eb474bf045eebc296ac86e28f58efdb5ed42  # [linux64]
   - url: {{ intel_ch }}/{{ target_platform }}/compiler_shared-{{ version }}-intel_{{ intel_build_number }}.conda  # [linux64 or win64]
     folder: compiler_shared  # [linux64 or win64]
-    sha256: cbb60d1c15999c017ff8fc967da0dba88b894d3da986da050d1ac1dd0a59930c  # [linux64]
+    sha256: 6438a5a6173c0e8956c3b426abc02adeac1bb401be59a73106ab5db8548c5fd9  # [linux64]
 
 build:
   number: {{ build_number }}
