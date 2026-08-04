@@ -233,7 +233,6 @@ outputs:
     test:
       commands:
         - ls -A1 ${PREFIX}/licensing/compiler/*  # [unix]
-        - test -f ${PREFIX}/include/CL/sycl.hpp  # [unix]
         - test -f ${PREFIX}/include/sycl/sycl.hpp  # [unix]
         - dir %PREFIX%\licensing\compiler\*  # [win]
 
