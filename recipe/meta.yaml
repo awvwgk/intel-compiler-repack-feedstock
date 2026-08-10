@@ -17,15 +17,8 @@
 
 # use this if our build script changes and we need to increment beyond intel's version
 #
-# NOTE: `umf` and `oneccl-devel` keep their own upstream build numbers, because
-# they are versioned independently of the compiler and `intel_build_number`
-# restarts on every compiler release (947 -> 235 -> 325), which would make their
-# build number go backwards for an unchanged version. As a consequence their
-# build string does not change when only `version`/`intel_build_number` are
-# bumped, so a compiler release update must also bump `dst_build_number` --
-# otherwise those two outputs are silently dropped by the output validation and
-# keep exact-pinning `intel-cmplr-lic-rt`/`intel-sycl-rt` from the previous
-# release.
+# Bump this on every compiler release: `umf` and `oneccl-devel` keep their own
+# upstream build numbers. See conda-forge/intel-compiler-repack-feedstock#86.
 {% set dst_build_number = '2' %}
 {% set build_number = intel_build_number|int + dst_build_number|int %}
 
