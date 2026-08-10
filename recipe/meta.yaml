@@ -17,9 +17,9 @@
 
 # use this if our build script changes and we need to increment beyond intel's version
 #
-# Bump this on every compiler release: `umf` and `oneccl-devel` keep their own
-# upstream build numbers. See conda-forge/intel-compiler-repack-feedstock#86.
-{% set dst_build_number = '2' %}
+# Bump this on every compiler release: `oneccl-devel` keeps its own upstream build
+# number and exact-pins `intel-sycl-rt`. See conda-forge/intel-compiler-repack-feedstock#86.
+{% set dst_build_number = '3' %}
 {% set build_number = intel_build_number|int + dst_build_number|int %}
 
 package:
@@ -666,7 +666,11 @@ outputs:
         - {{ pin_subpackage('intel-cmplr-lic-rt', exact=True) }}
       run:
         # intel-cmplr-lic-rt is a license file, please do not remove.
-        - {{ pin_subpackage('intel-cmplr-lic-rt', exact=True) }}
+        #
+        # Deliberately left unpinned -- a version-bound pin here freezes the
+        # published `umf` to one compiler release and breaks the next one.
+        # See conda-forge/intel-compiler-repack-feedstock#87.
+        - intel-cmplr-lic-rt
     about:
       home: https://github.com/oneapi-src/unified-memory-framework
       doc_url: https://oneapi-src.github.io/unified-memory-framework/
