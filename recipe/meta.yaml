@@ -667,10 +667,11 @@ outputs:
       run:
         # intel-cmplr-lic-rt is a license file, please do not remove.
         #
-        # Deliberately left unpinned -- a version-bound pin here freezes the
-        # published `umf` to one compiler release and breaks the next one.
+        # No upper bound on purpose -- `umf` keeps its own build number, so an
+        # older `umf` stays pinned by newer compiler releases and any upper bound
+        # eventually makes them unsolvable.
         # See conda-forge/intel-compiler-repack-feedstock#87.
-        - intel-cmplr-lic-rt
+        - {{ pin_subpackage('intel-cmplr-lic-rt', max_pin=None) }}
     about:
       home: https://github.com/oneapi-src/unified-memory-framework
       doc_url: https://oneapi-src.github.io/unified-memory-framework/
