@@ -30,8 +30,8 @@ Runtime for Intel® oneAPI DPC++/C++ Compiler.
 This package is a repackaged set of binaries obtained directly from Intel's Anaconda.org channel.
 
 
-About dpcpp_impl_win-64
------------------------
+About dpcpp_impl_linux-64
+-------------------------
 
 Home: https://software.intel.com/content/www/us/en/develop/tools.html
 
@@ -47,8 +47,8 @@ Implementation for Intel® oneAPI DPC++/C++ Compiler.
 This package is a repackaged set of binaries obtained directly from Intel's Anaconda.org channel.
 
 
-About dpcpp_win-64
-------------------
+About dpcpp_linux-64
+--------------------
 
 Home: https://software.intel.com/content/www/us/en/develop/tools.html
 
@@ -64,8 +64,8 @@ Activation for Intel® oneAPI DPC++/C++ Compiler.
 This package is a repackaged set of binaries obtained directly from Intel's Anaconda.org channel.
 
 
-About ifx_impl_win-64
----------------------
+About ifx_impl_linux-64
+-----------------------
 
 Home: https://software.intel.com/content/www/us/en/develop/tools.html
 
@@ -81,8 +81,8 @@ Implementation for Intel® Fortran Compiler.
 This package is a repackaged set of binaries obtained directly from Intel channel.
 
 
-About ifx_win-64
-----------------
+About ifx_linux-64
+------------------
 
 Home: https://software.intel.com/content/www/us/en/develop/tools.html
 
@@ -200,6 +200,23 @@ Intel End User License Agreement for Developer Tools.
 This package is a repackaged set of binaries obtained directly from Intel's Anaconda.org channel.
 
 
+About oneccl-devel
+------------------
+
+Home: https://software.intel.com/content/www/us/en/develop/tools.html
+
+Package license: LicenseRef-Proprietary-Intel-Simplified-Software-License
+
+Summary: Intel® oneAPI Collective Communications Library*
+
+Development: https://software.intel.com/content/www/us/en/develop/documentation/oneccl-developer-guide-and-reference/top.html
+
+Documentation: https://software.intel.com/content/www/us/en/develop/tools/oneapi/components/oneccl.htm
+
+Intel® oneAPI Collective Communications Library*.
+This package is a repackaged set of binaries obtained directly from Intel's Anaconda.org channel.
+
+
 About umf
 ---------
 
@@ -221,8 +238,8 @@ allowing certain allocation types to be isolated from others and
 allocated using different hardware resources as required.
 
 
-About dpcpp_impl_linux-64
--------------------------
+About dpcpp_impl_win-64
+-----------------------
 
 Home: https://software.intel.com/content/www/us/en/develop/tools.html
 
@@ -238,8 +255,8 @@ Implementation for Intel® oneAPI DPC++/C++ Compiler.
 This package is a repackaged set of binaries obtained directly from Intel's Anaconda.org channel.
 
 
-About dpcpp_linux-64
---------------------
+About dpcpp_win-64
+------------------
 
 Home: https://software.intel.com/content/www/us/en/develop/tools.html
 
@@ -255,8 +272,8 @@ Activation for Intel® oneAPI DPC++/C++ Compiler.
 This package is a repackaged set of binaries obtained directly from Intel's Anaconda.org channel.
 
 
-About ifx_impl_linux-64
------------------------
+About ifx_impl_win-64
+---------------------
 
 Home: https://software.intel.com/content/www/us/en/develop/tools.html
 
@@ -272,8 +289,8 @@ Implementation for Intel® Fortran Compiler.
 This package is a repackaged set of binaries obtained directly from Intel channel.
 
 
-About ifx_linux-64
-------------------
+About ifx_win-64
+----------------
 
 Home: https://software.intel.com/content/www/us/en/develop/tools.html
 
@@ -289,23 +306,6 @@ Activation for Intel® Fortran Compiler.
 This package is a repackaged set of binaries obtained directly from Intel channel.
 
 
-About oneccl-devel
-------------------
-
-Home: https://software.intel.com/content/www/us/en/develop/tools.html
-
-Package license: LicenseRef-Proprietary-Intel-Simplified-Software-License
-
-Summary: Intel® oneAPI Collective Communications Library*
-
-Development: https://software.intel.com/content/www/us/en/develop/documentation/oneccl-developer-guide-and-reference/top.html
-
-Documentation: https://software.intel.com/content/www/us/en/develop/tools/oneapi/components/oneccl.htm
-
-Intel® oneAPI Collective Communications Library*.
-This package is a repackaged set of binaries obtained directly from Intel's Anaconda.org channel.
-
-
 Current build status
 ====================
 
@@ -316,52 +316,6 @@ Current build status
       <a href="https://github.com/conda-forge/intel-compiler-repack-feedstock/actions/workflows/conda-build.yml">
         <img src="https://github.com/conda-forge/intel-compiler-repack-feedstock/actions/workflows/conda-build.yml/badge.svg?event=push&branch=main">
       </a>
-    </td>
-  </tr>
-    
-  <tr>
-    <td>Azure</td>
-    <td>
-      <details>
-        <summary>
-          <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=15400&branchName=main">
-            <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/intel-compiler-repack-feedstock?branchName=main">
-          </a>
-        </summary>
-        <table>
-          <thead><tr><th>Variant</th><th>Status</th></tr></thead>
-          <tbody><tr>
-              <td>win_64_python3.10.____cpython</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=15400&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/intel-compiler-repack-feedstock?branchName=main&jobName=win&configuration=win%20win_64_python3.10.____cpython" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
-              <td>win_64_python3.11.____cpython</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=15400&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/intel-compiler-repack-feedstock?branchName=main&jobName=win&configuration=win%20win_64_python3.11.____cpython" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
-              <td>win_64_python3.12.____cpython</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=15400&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/intel-compiler-repack-feedstock?branchName=main&jobName=win&configuration=win%20win_64_python3.12.____cpython" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
-              <td>win_64_python3.13.____cp313</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=15400&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/intel-compiler-repack-feedstock?branchName=main&jobName=win&configuration=win%20win_64_python3.13.____cp313" alt="variant">
-                </a>
-              </td>
-            </tr>
-          </tbody>
-        </table>
-      </details>
     </td>
   </tr>
 </table>
@@ -399,31 +353,73 @@ conda config --add channels conda-forge
 conda config --set channel_priority strict
 ```
 
-Once the `conda-forge` channel has been enabled, `dpcpp-cpp-rt, dpcpp_impl_linux-64, dpcpp_impl_win-64, dpcpp_linux-64, dpcpp_win-64, ifx_impl_linux-64, ifx_impl_win-64, ifx_linux-64, ifx_win-64, intel-cmplr-lib-rt, intel-cmplr-lib-ur, intel-cmplr-lic-rt, intel-fortran-rt, intel-opencl-rt, intel-sycl-rt, oneccl-devel, umf` can be installed with `conda`:
+How to use
+----------
+
+<details>
+<summary>With conda</summary>
 
 ```
 conda install dpcpp-cpp-rt dpcpp_impl_linux-64 dpcpp_impl_win-64 dpcpp_linux-64 dpcpp_win-64 ifx_impl_linux-64 ifx_impl_win-64 ifx_linux-64 ifx_win-64 intel-cmplr-lib-rt intel-cmplr-lib-ur intel-cmplr-lic-rt intel-fortran-rt intel-opencl-rt intel-sycl-rt oneccl-devel umf
 ```
 
-or with `mamba`:
+</details>
+
+<details>
+<summary>With mamba</summary>
 
 ```
 mamba install dpcpp-cpp-rt dpcpp_impl_linux-64 dpcpp_impl_win-64 dpcpp_linux-64 dpcpp_win-64 ifx_impl_linux-64 ifx_impl_win-64 ifx_linux-64 ifx_win-64 intel-cmplr-lib-rt intel-cmplr-lib-ur intel-cmplr-lic-rt intel-fortran-rt intel-opencl-rt intel-sycl-rt oneccl-devel umf
 ```
 
-It is possible to list all of the versions of `dpcpp-cpp-rt` available on your platform with `conda`:
+</details>
+
+<details>
+<summary>With pixi</summary>
+
+```
+# for adding to your local project
+pixi add dpcpp-cpp-rt dpcpp_impl_linux-64 dpcpp_impl_win-64 dpcpp_linux-64 dpcpp_win-64 ifx_impl_linux-64 ifx_impl_win-64 ifx_linux-64 ifx_win-64 intel-cmplr-lib-rt intel-cmplr-lib-ur intel-cmplr-lic-rt intel-fortran-rt intel-opencl-rt intel-sycl-rt oneccl-devel umf
+# for installing globally
+pixi global install dpcpp-cpp-rt dpcpp_impl_linux-64 dpcpp_impl_win-64 dpcpp_linux-64 dpcpp_win-64 ifx_impl_linux-64 ifx_impl_win-64 ifx_linux-64 ifx_win-64 intel-cmplr-lib-rt intel-cmplr-lib-ur intel-cmplr-lic-rt intel-fortran-rt intel-opencl-rt intel-sycl-rt oneccl-devel umf
+```
+
+</details>
+
+Search package versions
+-----------------------
+
+It is possible to list all of the versions of `dpcpp-cpp-rt` available on your platform:
+
+<details>
+<summary>With conda</summary>
 
 ```
 conda search dpcpp-cpp-rt --channel conda-forge
 ```
 
-or with `mamba`:
+</details>
+
+<details>
+<summary>With mamba</summary>
 
 ```
 mamba search dpcpp-cpp-rt --channel conda-forge
 ```
 
-Alternatively, `mamba repoquery` may provide more information:
+</details>
+
+<details>
+<summary>With pixi</summary>
+
+```
+pixi search dpcpp-cpp-rt --channel conda-forge
+```
+
+</details>
+
+<details>
+<summary>With mamba repoquery, which may provide more information</summary>
 
 ```
 # Search all versions available on your platform:
@@ -435,6 +431,8 @@ mamba repoquery whoneeds dpcpp-cpp-rt --channel conda-forge
 # List dependencies of `dpcpp-cpp-rt`:
 mamba repoquery depends dpcpp-cpp-rt --channel conda-forge
 ```
+
+</details>
 
 
 About conda-forge
